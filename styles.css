@@ -1,13 +1,13 @@
 :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;color-scheme:dark}
 *{box-sizing:border-box}
 html{min-height:100%}
-body{min-height:100vh;margin:0;font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,Arial;background:linear-gradient(180deg,#071028 0%,var(--bg) 100%);color:#e6eef6;overflow-x:hidden}
+body{min-height:100vh;margin:0;font-family:Inter,Segoe UI,Roboto,system-ui,-apple-system,Arial;background:linear-gradient(270deg,#071028 0%,#0b1f42 25%,#081d3a 50%,#0b1f42 75%,#071028 100%);background-size:200% 200%;-webkit-animation:AnimationName 30s ease infinite;-moz-animation:AnimationName 30s ease infinite;animation:AnimationName 30s ease infinite;color:#e6eef6;overflow-x:hidden}
 .wrap{max-width:900px;margin:48px auto;padding:24px}
 header{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .topbar{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,.08)}
+.topbar + .site-nav{margin-top:6px}
 .topbar-title{display:flex;align-items:flex-end;gap:0.75rem}
 .topbar-title h1{margin:0;font-weight:700;font-size:2.8rem}
-.page-intro{margin-top:14px}
 .header-right{display:flex;align-items:center;gap:1rem}
 .site-nav{display:flex;gap:16px}
 .site-nav a{color:#cfeff6;text-decoration:none;font-weight:500;transition:color .2s ease}
@@ -15,8 +15,9 @@ header{display:flex;align-items:center;justify-content:space-between;gap:1rem;fl
 p.lead{color:var(--muted);margin:0}
 .card{background:rgba(255,255,255,0.03);padding:18px 34px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,.6)}
 .project-list{display:grid;gap:16px;margin-top:14px}
-.project-card{background:rgba(255,255,255,0.04);padding:20px 32px;border-radius:14px;border:1px solid rgba(255,255,255,0.08);transition:transform .2s ease,box-shadow .2s ease;cursor:pointer}
-.project-card:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,0,0,.25)}
+.project-card-link{text-decoration:none;color:inherit;display:block}
+.project-card{background:rgba(255,255,255,0.04);padding:20px 32px;border-radius:14px;border:1px solid rgba(255, 255, 255, 0.0);box-shadow:0 4px 12px rgba(0,0,0,.55);transition:transform .2s ease,box-shadow .2s ease;cursor:pointer}
+.project-card-link:hover .project-card{transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,0,0,.45)}
 .project-card h3{margin:0 0 10px;font-size:1.1rem}
 .project-card p{margin:0;color:var(--muted)}
 pre{white-space:pre-wrap;font-size:13px;color:#cfeff6}
@@ -44,4 +45,20 @@ footer{margin-top:22px;color:var(--muted);font-size:13px}
   .project-card{padding:14px 16px}
   p{font-size:0.95rem}
   footer{font-size:12px}
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
