@@ -17,6 +17,7 @@ p.lead{color:var(--muted);margin:0}
 .project-list{display:grid;gap:16px;margin-top:14px}
 .project-card-link{text-decoration:none;color:inherit;display:block}
 .project-card{background:rgba(255,255,255,0.04);padding:20px 32px;border-radius:14px;border:1px solid rgba(255, 255, 255, 0.0);box-shadow:0 4px 12px rgba(0,0,0,.55);transition:transform .2s ease,box-shadow .2s ease;cursor:pointer}
+.project-card-image{display:block;width:100%;max-width:560px;height:auto;margin:16px auto 0 auto;border-radius:12px;border:1px solid rgba(255,255,255,.08)}
 .project-card-link:hover .project-card{transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,0,0,.45)}
 .project-card h3{margin:0 0 10px;font-size:1.1rem}
 .project-card p{margin:0;color:var(--muted)}
