@@ -3,94 +3,100 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>David Morra — Projects</title>
+  <meta name="description" content="A selection of academic and personal software projects by David Morra.">
+  <title>David Morra | Projects</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="wrap">
-    <div class="topbar">
-      <div class="topbar-title">
-        <h1>Software Projects</h1>
-      </div>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="index.html" class="logo">David Morra</a>
+      <nav class="site-nav">
+        <a href="index.html">About</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <nav class="site-nav">
-      <a href="index.html">About Me</a>
-      <a href="projects.html">Projects</a>
-    </nav>
+  </header>
 
-    <main style="margin-top:18px">
-      <section class="card">
-        <h2>Technical Experience</h2>
-        <p>I'm a passionate coder, currently exploring and learning new projects to enhance my programming skills. This page and my GitHub are where I share my academic and personal projects. Take a look around and explore my projects!</p>
-      <div style="margin-top:18px;margin-bottom:20px;">
-          <a href="https://github.com/DaveMorra" style="background:var(--accent);color:#04202a;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;transition:opacity .2s ease;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">View My GitHub</a>
+  <div class="wrap">
+    <main>
+      <section class="hero">
+        <h1>Projects</h1>
+        <p class="lead">A selection of academic and personal projects I have built to sharpen my programming skills, spanning full-stack web apps, simulations, and algorithm-focused tools. More projects are available on my GitHub.</p>
+        <div class="cta-row">
+          <a href="https://github.com/DaveMorra" class="btn btn-primary">View My GitHub</a>
         </div>
       </section>
 
-      <section class="project-list">
-        <a href="" class="project-card-link">
-          <article class="project-card">
-            <h3>Smart Scheduler</h3>
-            <p>Developed a web application designed to help college students optimize their class schedules using a heuristic tree search algorithm. The platform allows users to customize scheduling parameters and constraints based on their needs. It then generates multiple optimized shedules, helping students plan courses more efficiently.</p>
-            <img class="project-card-image" src="images/sss3.png" alt="Smart Scheduler screenshot">
-          </article>
-        </a>
+      <section class="project-list section">
+        <div class="project-card is-static">
+          <h3>Smart Scheduler</h3>
+          <p>A web application that helps college students optimize their class schedules using a heuristic tree search algorithm. Users can customize scheduling parameters and constraints, and the platform generates multiple optimized schedules to plan courses more efficiently.</p>
+          <img class="project-card-image" src="images/sss3.png" alt="Smart Scheduler screenshot">
+        </div>
+
         <a href="https://github.com/DaveMorra/Particle-Based-Fluid-Simulation" target="_blank" class="project-card-link">
           <article class="project-card">
             <h3>Particle Based Fluid Simulation</h3>
-            <p>This project is a Java particle-based fluid simulation that uses simple physics rules to create the appearance of fluid-like motion. Each particle is affected by forces such as gravity, collisions with walls, and interactions with nearby particles. The simulation runs in real time with rendering in a Swing window, providing smooth and visually appealing motion. Users can interact with the system using mouse input to attract or repel particles dynamically.</p>
+            <p>A Java particle-based fluid simulation that uses simple physics rules to create fluid-like motion. Each particle is affected by gravity, wall collisions, and interactions with nearby particles, rendered in real time in a Swing window. Users can interact with the system using mouse input to attract or repel particles.</p>
             <img class="project-card-image" src="images/pbfs1.png" alt="Particle Based Fluid Simulation screenshot">
           </article>
         </a>
+
         <a href="https://github.com/DaveMorra/Huffman-And-Iz77-Image-Compression" target="_blank" class="project-card-link">
           <article class="project-card">
             <h3>Huffman and LZ77 Image Compression</h3>
-            <p>This project implements both Huffman coding and LZ77 compression algorithms to compress image files. The implementation includes the encoding and decoding processes for both methods, allowing users to compare the efficiency and performance of each technique.</p>
+            <p>An implementation of both Huffman coding and LZ77 compression for image files, including the encoding and decoding processes for each method, so users can compare their efficiency and performance.</p>
             <img class="project-card-image" src="images/ca1.png" alt="Image compression screenshot">
           </article>
         </a>
-        <a href="" class="project-card-link">
-          <article class="project-card">
-            <h3>Inventory Management Website</h3>
-            <p>Full-stack web application backed with a SQL database, designed to help businesses efficiently manage their inventory, customers, and agents. It provides features for inventory tracking, purchase management, and sales reporting, all integrated to support business organization and decision making.</p>
-            <img class="project-card-image" src="images/sd2.png" alt="Inventory Management screenshot">
-          </article>
-        </a>
+
+        <div class="project-card is-static">
+          <h3>Inventory Management Website</h3>
+          <p>A full-stack web application backed by a SQL database, built to help businesses manage inventory, customers, and agents. It supports inventory tracking, purchase management, and sales reporting to aid business organization and decision making.</p>
+          <img class="project-card-image" src="images/sd2.png" alt="Inventory Management screenshot">
+        </div>
+
         <a href="https://github.com/DaveMorra/Grid-Based-Sandbox-Simulator" target="_blank" class="project-card-link">
           <article class="project-card">
             <h3>Grid Based Sandbox Simulator</h3>
-            <p>A Java-based 2D particle sandbox simulation that models gravity, fluid flow, and solid interactions. Users can use the mouse to place and modify particles like sand, water, and solid blocks, creating a dynamic grid-based environment.</p>
+            <p>A Java-based 2D particle sandbox simulation that models gravity, fluid flow, and solid interactions. Users can place and modify particles like sand, water, and solid blocks to build a dynamic grid-based environment.</p>
             <img class="project-card-image" src="images/sps1.png" alt="Grid Based Sandbox Simulator screenshot">
           </article>
         </a>
-                <a href="https://github.com/DaveMorra/Touchdesigner-AI-Emotion-Detector" target="_blank" class="project-card-link">
+
+        <a href="https://github.com/DaveMorra/Touchdesigner-AI-Emotion-Detector" target="_blank" class="project-card-link">
           <article class="project-card">
             <h3>Touchdesigner AI Emotion Detector</h3>
-            <p>Created a program that can interpret and react to human physical input in a seamless and intuitive way. By leveraging TouchDesigner for visual creation and Python for scripting, the system detects a user's gestures, body language, and facial expressions, and modifies their environment accordingly. The system makes use of the MediaPipe TouchDesigner Plugin to extract and process the input from the user.</p>
+            <p>A program that interprets and reacts to human physical input in real time. Using TouchDesigner for visual creation and Python for scripting, the system detects a user's gestures, body language, and facial expressions through the MediaPipe TouchDesigner plugin, then modifies their environment accordingly.</p>
           </article>
         </a>
-                <a href="https://github.com/DaveMorra/Sudoku-Solver-And-Generator" target="_blank" class="project-card-link">
+
+        <a href="https://github.com/DaveMorra/Sudoku-Solver-And-Generator" target="_blank" class="project-card-link">
           <article class="project-card">
             <h3>Sudoku Solver and Generator</h3>
-            <p>This project implements a Sudoku Solver and Generator in Java for standard 9×9 Sudoku boards. The solver reads a Sudoku puzzle from a file, then solves it using depth-first search with backtracking. The generator creates a valid Sudoku board with a specified number of known cells, ensuring the puzzle has at least one valid solution. All boards are stored and loaded using plain .txt files.</p>
+            <p>A Sudoku solver and generator written in Java for standard 9x9 boards. The solver reads a puzzle from a file and solves it using depth-first search with backtracking, while the generator creates a valid board with a specified number of known cells. Boards are stored and loaded as plain .txt files.</p>
           </article>
         </a>
-                <a href="https://github.com/DaveMorra/Minesweeper" target="_blank" class="project-card-link">
+
+        <a href="https://github.com/DaveMorra/Minesweeper" target="_blank" class="project-card-link">
           <article class="project-card">
             <h3>Minesweeper</h3>
-            <p>This is a simple implementation of the classic Minesweeper game. The goal is to uncover all the tiles on the grid without hitting a mine. The game provides a grid where each cell can either be a mine or a number that represents the count of neighboring mines.</p>
+            <p>A simple implementation of the classic Minesweeper game. The goal is to uncover every tile on the grid without hitting a mine, where each cell is either a mine or a number showing the count of neighboring mines.</p>
           </article>
         </a>
-          <a href="https://www.youtube.com/watch?v=tYbfSUVoG9Q" target="_blank" class="project-card-link">
+
+        <a href="https://www.youtube.com/watch?v=tYbfSUVoG9Q" target="_blank" class="project-card-link">
           <article class="project-card">
             <h3>Unity Marble Game</h3>
-            <p>This is a 3D marble game developed in Unity, including physics-based movement and interactive environments that pushes users to quickly traverse different courses.</p>
+            <p>A 3D marble game built in Unity with physics-based movement and interactive environments that challenge players to traverse different courses quickly.</p>
           </article>
         </a>
       </section>
 
       <footer>
-        <div>Created By David Morra</div>
+        <div>© 2026 David Morra</div>
       </footer>
     </main>
   </div>
